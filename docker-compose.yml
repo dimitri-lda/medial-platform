@@ -35,12 +35,6 @@ services:
       - target: 443
         published: ${HTTP3_PORT:-443}
         protocol: udp
-  db:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: symfony
-      POSTGRES_USER: symfony
-      POSTGRES_PASSWORD: symfony
 
 # Mercure is installed as a Caddy module, prevent the Flex recipe from installing another service
 ###> symfony/mercure-bundle ###

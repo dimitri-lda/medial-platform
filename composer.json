@@ -9,10 +9,9 @@
         "php": ">=8.2.11",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^2.10",
+        "doctrine/doctrine-bundle": "*",
         "doctrine/doctrine-migrations-bundle": "^3.2",
-        "doctrine/migrations": "^3.6",
-        "doctrine/orm": "^2.16",
+        "doctrine/orm": "*",
         "runtime/frankenphp-symfony": "^0.1.1",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
@@ -69,5 +68,11 @@
             "require": "6.3.*",
             "docker": true
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ]
 }
